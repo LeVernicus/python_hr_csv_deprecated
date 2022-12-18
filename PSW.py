@@ -56,7 +56,7 @@ class Csvline:
 def get_csv():
     todaysdate = datetime.date.today()
     #username and password payload, encrypted with keyring module
-    data1 = {'username': 'zb041024', 'password': keyring.get_password("PSW", "zb041024")}
+    data1 = {'username': 'username', 'password': keyring.get_password("key", "username")}
     #calculate start of fiscal year
     if todaysdate.month >= 7:
         s_year = todaysdate.year
